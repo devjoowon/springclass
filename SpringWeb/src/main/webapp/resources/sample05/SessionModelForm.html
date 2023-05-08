@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script src="../js/common.js"></script>
+</head>
+<body>
+	<h2>학생 정보를 등록해 보아요!</h2>
+	<hr>
+	<form id="myForm" action="" method="post">
+		action: 
+		<select>
+			<option selected="selected">/springweb/sessionAttributesTest01</option>
+			<option>/springweb/sessionAttributesTest02</option>
+			<option>/springweb/sessionAttributesTest03</option>
+			<option>/springweb/sessionAttributesTest04</option>
+		</select>
+		<br><br>
+		전달할 메시지 : <input type="text" name="msg">
+		<br><br>
+		학생 번호 : <input type="text" name="userNumber">
+		<br><br>
+		학생 이름 : <input type="text" name="userName">
+		<br><br>
+		학생 학과 : <input type="text" name="userDept">
+		<br><br>
+		<input type="submit" value="서버로 전송!" onclick="myFunc()">
+	</form>
+</body>
+</html>

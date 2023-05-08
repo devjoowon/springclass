@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>회원 가입</title>
+   <style>
+      label {
+         display: block;
+         margin-bottom: 10px;
+      }
+      input[type="text"], input[type="password"], input[type="tel"] {
+         padding: 5px;
+         border: 1px solid #ccc;
+         border-radius: 3px;
+         font-size: 16px;
+         width: 100%;
+         box-sizing: border-box;
+         margin-bottom: 20px;
+      }
+      input[type="submit"] {
+         background-color: #4CAF50;
+         color: white;
+         padding: 10px 20px;
+         border: none;
+         border-radius: 4px;
+         cursor: pointer;
+         font-size: 16px;
+      }
+      input[type="submit"]:hover {
+         background-color: #45a049;
+      }
+   </style>
+</head>
+<body>
+   <form method="POST" action="/springweb/member1">
+      <label for="id">아이디:</label>
+      <input type="text" id="id" name="id" required>
+
+      <label for="password">비밀번호:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="name">이름:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="tel">전화번호:</label>
+      <input type="tel" id="tel" name="tel" required>
+
+      <input type="submit" value="가입하기">
+   </form>
+   
+      <form method="POST" action="/springweb/member2">
+      <label for="id">아이디:</label>
+      <input type="text" id="id" name="id" required>
+
+      <label for="password">비밀번호:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="name">이름:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="tel">전화번호:</label>
+      <input type="tel" id="tel" name="tel" required>
+
+      <input type="submit" value="가입하기">
+   </form>
+   
+      <form method="POST" action="/springweb/member3">
+      <label for="id">아이디:</label>
+      <input type="text" id="id" name="id" required>
+
+      <label for="password">비밀번호:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="name">이름:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="tel">전화번호:</label>
+      <input type="tel" id="tel" name="tel" required>
+
+      <input type="submit" value="가입하기">
+   </form>
+</body>
+</html>

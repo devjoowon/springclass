@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>입력 정보</title>
+</head>
+<body>
+	<h1>입력 정보</h1>
+	<form action="/springweb/form/result" method="post">
+		<label for="name">이름:</label>
+		<input type="text" id="name" name="name" required>
+		<br>
+		<label for="address">주소:</label>
+		<input type="text" id="address" name="address" required>
+		<br>
+		<label for="fruit">좋아하는 과일:</label>
+		<input type="checkbox" id="apple" name="fruit" value="사과">
+		<label for="apple">사과</label>
+		<input type="checkbox" id="grape" name="fruit" value="포도">
+		<label for="grape">포도</label>
+		<input type="checkbox" id="watermelon" name="fruit" value="수박">
+		<label for="watermelon">수박</label>
+		<input type="checkbox" id="orientalmelon" name="fruit" value="참외">
+		<label for="orientalmelon">참외</label>
+		<br>
+		<input type="submit" value="전송">
+	</form>
+</body>
+</html>
