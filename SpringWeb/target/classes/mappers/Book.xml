@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="myBook">
+
+	<select id="countBooks" resultType="int">
+		SELECT COUNT(*) FROM book
+	</select>
+
+	<select id="selectByKeyword" parameterType="Request"
+		resultType="Book">	
+			<![CDATA[		
+			SELECT bimgurl, btitle, bauthor, bprice, bdate
+			FROM book
+			WHERE btitle LIKE '%' || #{keyword} || '%'
+ 			AND bprice BETWEEN #{minPrice} AND #{maxPrice}
+  			AND bdate >= #{publishDate}
+			]]>
+	</select>
+
+</mapper>

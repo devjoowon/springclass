@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>책 검색하기</title>
+<style>
+body {
+	font-family: sans-serif;
+	background-color: #FFFFFF; /* 변경 */
+	color: #333333;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #FFFFFF; /* 변경 */
+	color: #333333;
+	padding: 10px;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+form {
+	background-color: #FFFFFF;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px #AAAAAA;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+input[type="text"], input[type="number"], input[type="date"] {
+	padding: 5px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0px 0px 5px #CCCCCC;
+	width: 100%;
+	margin-bottom: 20px;
+	font-size: 1.1em;
+	background-color: #FFFFFF; /* 변경 */
+}
+
+input[type="submit"] {
+	background-color: #FFFFFF; /* 변경 */
+	color: #333333;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.2em;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+	background-color: #F2F2F2; /* 변경 */
+}
+
+.input-box {
+	display: inline-block;
+	margin-bottom: 20px;
+	font-size: 1.1em;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: 2px solid #CCCCCC;
+	box-shadow: 0px 0px 5px #CCCCCC;
+	width: 45%;
+	height: 30px;
+	padding: 5px;
+	vertical-align: top;
+	background-color: #FFFFFF; /* 변경 */
+}
+
+.input-group input {
+	flex: 1;
+	background-color: #FFFFFF; /* 변경 */
+}
+
+.input-group span {
+	margin: 0 10px;
+}
+</style>
+</head>
+<body>
+<body>
+	<header>책 검색하기</header>
+	<form method="POST" action="/springweb/booksearch">
+		<label for="keyword">책 제목 keyword</label> <input type="text"
+			id="keyword" name="keyword" placeholder="책 제목을 입력하세요." required>
+
+		<div>
+			<label for="price_range">가격</label>
+			<div class="input-group">
+				<input type="number" id="minPrice" name="minPrice" min="0"
+					max="999999" placeholder="최소 가격을 입력하세요." required> <span>~</span>
+				<input type="number" id="maxPrice" name="maxPrice" min="0"
+					max="999999" placeholder="최대 가격을 입력하세요." required>
+			</div>
+		</div>
+
+		<label for="publish_date">출판일</label> <input type="date"
+			id="publishDate" name="publishDate" placeholder="yyyy-mm-dd">
+
+		<input type="submit" value="검색">
+	</form>
+</body>
+</html>

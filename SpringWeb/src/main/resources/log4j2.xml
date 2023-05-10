@@ -35,8 +35,12 @@
         <Logger name="case3" level="debug" additivity="false">
             <AppenderRef ref="stdout_1" />
         </Logger>
-  
-  
+  		
+  		<!-- mybatis를 위한 Logger -->
+        <Logger name="myBook" level="debug"/>
+        <Logger name="myMember" level="debug"/>
+        <Logger name="myPoint" level="debug"/>
+           
         <Root level="INFO">
             <AppenderRef ref="stdout_2" />
         </Root>

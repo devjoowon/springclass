@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>다양한 방법으로 호출해보아요!</h1>
+	
+	<h3>GET방식</h3>
+	<a href="/springweb/testConsumes1?name=hong">controller를 호출해 보아요!</a>
+	<br><br>
+	
+	<h3>POST방식</h3>
+	<form action="/springweb/testConsumes2" method="post">
+		ID : <input type="text" id="myId">
+		<input type="submit" value="POST방식으로 전송">
+	</form>
+	<br><br>
+	
+	<h3>produces 속성을 이용할거구요 - GET방식</h3>
+	<a href="/springweb/testProduces1">controller를 호출해 보아요!</a>
+	<br><br>
+	
+	<h3>produces 속성을 이용할거구요 - GET방식 - 서버에서 JSON을 리턴할거에요!</h3>
+	<a href="/springweb/testProduces2">controller를 호출해 보아요!</a>
+	<br><br>
+	
+	<h3>produces 속성을 이용할거구요 - GET방식 - 서버에서 HTML을 리턴할거에요!</h3>
+	<h3>@ResponseBody를 이용할거에요!</h3>
+	<a href="/springweb/testProduces3">controller를 호출해 보아요!</a>
+	<br><br>
+	
+	<h3>produces 속성을 이용할거구요 - GET방식 - 서버에서 ResponseEntity을 리턴할거에요!</h3>
+	<h3>@ResponseBody를 이용할거에요!</h3>
+	<a href="/springweb/testProduces4">controller를 호출해 보아요!</a>
+	<br><br>
+	
+	<h3>produces 속성을 이용할거구요 - GET방식 - 서버에서 JSON을 리턴할거에요!</h3>
+	<h3>@ResponseBody를 이용할거에요!</h3>
+	<a href="/springweb/testProduces5">controller를 호출해 보아요!</a>
+	<br><br>
+</body>
+</html>
